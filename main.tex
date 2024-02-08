@@ -1,4 +1,5 @@
-\documentclass[16pt,a4paper]{article}
+\documentclass[14pt,a4paper]{extarticle}
+\usepackage{lipsum} % can be remove
 \usepackage{geometry}
  \geometry{
  a4paper,
@@ -8,6 +9,12 @@
  top=2.54cm,
  bottom=2.54cm,
  }
+%--ตั้งหัวกระดาษ--%
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[L]{content for \fancyplain{plain}{fancy} pages}
+\fancyhead[R]{\thepage}
+%--*********--%
 \usepackage[no-math]{fontspec} % จัดการเกี่ยวกับฟ้อนต์
 \usepackage{xltxtra}
 \usepackage{graphicx} % จัดการเกี่ยวกับภาพ
@@ -42,5 +49,6 @@
 %--***************--%
 \newpage
 \section{หัวข้ออันดับที่หนึ่ง}
-เนื่อหา
+\subsection{ทดสอบตัวอักษร}
+\lipsum[1] % can be remove
 \end{document}
