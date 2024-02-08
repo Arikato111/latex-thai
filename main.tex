@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[16pt,a4paper]{article}
 \usepackage{geometry}
  \geometry{
  a4paper,
@@ -8,25 +8,39 @@
  top=2.54cm,
  bottom=2.54cm,
  }
-\usepackage{fontspec}
+\usepackage[no-math]{fontspec} % จัดการเกี่ยวกับฟ้อนต์
 \usepackage{xltxtra}
-\usepackage{graphicx}
+\usepackage{graphicx} % จัดการเกี่ยวกับภาพ
 \graphicspath{ {./img/} }
+%--สำหรับภาษาไทยและการตัดบรรทัด--%
 \XeTeXlinebreaklocale "th_TH"
 \XeTeXlinebreakskip = 0pt plus 1pt  
-\usepackage{fonts-tlwg}
-
 \setmainfont[
+  Path=fonts/,
   BoldFont={THSarabunNew_Bold.ttf},
   ItalicFont={THSarabunNew_Italic.ttf},
   BoldItalicFont={THSarabunNew_BoldItalic.ttf},
 ]{THSarabunNew.ttf}
-
-\title{template}
-\author{Nawasan Wisitsingkhon}
-
+%--*********************--%
+%
 \begin{document}
-
-\LARGE พิมพ์อักษรที่นี่
-
+%--สำหรับหน้าปก--%
+\begin{titlepage}
+  \begin{figure}
+    \centering
+    \includegraphics[width=4cm]{latex.png}
+  \end{figure}
+  \begin{center}
+    \Huge Latex Template \\
+    \vspace{5cm} 
+    \LARGE Name Lastname \\
+    \vfill
+    \LARGE Somewhere in the world
+    \pagebreak
+  \end{center}
+\end{titlepage}
+%--***************--%
+\newpage
+\section{หัวข้ออันดับที่หนึ่ง}
+เนื่อหา
 \end{document}

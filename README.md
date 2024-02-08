@@ -13,7 +13,7 @@ latex เปรียบเสมือน Markup language ที่ต้อง
 
     compiler มีอยู่หลายตัว สามารถใช้ตัวอื่นก็ได้
 
-2.  นอกจากจะมี **Compiler** มาแล้ว ก็จะมีตัว package manage มาให้ด้วย เพื่อใช้สำหรับติดตั้ง package
+2.  นอกจากจะมี **Compiler** มาแล้ว ก็จะมีตัว packager manage มาให้ด้วย เพื่อใช้สำหรับติดตั้ง package
 
 3. **Editor** ก็คือโปรแกรมที่ใช้ในการเขียน latex ซึ่งมีอยู่หลายตัวเช่น `TexStudio` หรือจะใช้ `Vscode` ก็ได้ เพราะเป็นเพียงการแก้ไข text file เท่านั้น
 
@@ -25,8 +25,7 @@ latex เปรียบเสมือน Markup language ที่ต้อง
 ติดตั้ง texlive
 
 ```
-$ sudo pacman -S texlive-basic 
-$ sudo pacman -S texlive-meta
+$ sudo pacman -S texlive-basic texlive-meta
 ```
 compile ไฟล์ latex เป็น pdf
 
